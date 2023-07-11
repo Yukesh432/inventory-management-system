@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Expired Items</title>
+</head>
+<body>
+
+    {% include 'partials/nav.html' %}
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h1 class="text-center">Expired Items</h1>
+
+    <!-- Item Table -->
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Category</th>
+          <th>Sub-Category</th>
+          <th>Manufacturing Date</th>
+          <th>Expiry Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>Fresh Fruits</td>
+          <td>...</td>
+          <td>2023-06-01</td>
+          <td>2023-07-01</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>Fresh Fruits</td>
+          <td>...</td>
+          <td>2023-06-01</td>
+          <td>2023-07-01</td>
+        </tr>
+        <tr>
+          <td>Carrot</td>
+          <td>Vegetables</td>
+          <td>...</td>
+          <td>2023-06-01</td>
+          <td>2023-07-01</td>
+        </tr>
+        <!-- Add more items here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  -->
+</body>
+</html>

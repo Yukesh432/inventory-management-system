@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f9a825;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'dashboard-index' %}" style="color: #fff;">Inventory Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./dashboard.php" style="color: #fff;">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.php" style="color: #fff;">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./categories.php" style="color: #fff;">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./suppliers.php" style="color: #fff;">Suppliers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
+              Settings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./settings.php" style="color: #000;">Account Settings</a></li>
+              <li><a class="dropdown-item" href="./users.php" style="color: #000;">Users</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="color: #000;">
+          <button class="btn btn-outline-success" type="submit" style="color: #000; background-color: #fff;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  

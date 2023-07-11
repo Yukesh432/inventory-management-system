@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Products</title>
+
+  <style>
+    /* Category Gradients */
+    .category-title {
+        background: linear-gradient(to right, #FF8A00, #FFC000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      /* Subcategory Gradients */
+      .subcategory-list {
+        background: linear-gradient(to right,  #FFD640, #FFEE80);
+      }
+  
+      /* Product Card Gradients */
+      .product-card {
+        background: linear-gradient(to right, #FFD640, #FFEE80);
+      }
+      
+    .category-title {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+
+    .subcategory-list {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .subcategory-list li {
+      margin-bottom: 5px;
+    }
+
+    .product-list {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .product-list li {
+      margin-bottom: 5px;
+    }
+
+    .product-card {
+      background-color: #f8f9fa;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .product-card .product-price {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+{% include 'partials/nav.html' %}
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h1 class="text-center">Products</h1>
+
+    <!-- Categories -->
+<div class="row justify-content-center mt-4">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="category-title">Food Items</h4>
+          <ul class="subcategory-list">
+            <li><a href="#">Fresh Fruits</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Canned Foods</a></li>
+            <!-- Add more food subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="category-title">Bread Items</h4>
+          <ul class="subcategory-list">
+            <li><a href="#">Whole Wheat Bread</a></li>
+            <li><a href="#">Multigrain Bread</a></li>
+            <li><a href="#">Bagels</a></li>
+            <!-- Add more bread subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="category-title">Chocolate Items</h4>
+          <ul class="subcategory-list">
+            <li><a href="#">Dark Chocolate</a></li>
+            <li><a href="#">Milk Chocolate</a></li>
+            <li><a href="#">White Chocolate</a></li>
+            <!-- Add more chocolate subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="category-title">Cosmetics Items</h4>
+          <ul class="subcategory-list">
+            <li><a href="#">Shampoo</a></li>
+            <li><a href="#">Toothpaste</a></li>
+            <li><a href="#">Body Lotion</a></li>
+            <!-- Add more cosmetics subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Add more categories here -->
+  </div>
+  
+
+    <!-- Product List -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-3">
+        <h5 class="subcategory-title">Fresh Fruits</h5>
+        <ul class="product-list">
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Apple</h6>
+                <p class="card-text product-price">$1.99</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Banana</h6>
+                <p class="card-text product-price">$0.99</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Orange</h6>
+                <p class="card-text product-price">$2.49</p>
+              </div>
+            </div>
+          </li>
+          <!-- Add more fruits here -->
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="subcategory-title">Vegetables</h5>
+        <ul class="product-list">
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Carrot</h6>
+                <p class="card-text product-price">$0.79</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Broccoli</h6>
+                <p class="card-text product-price">$1.49</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Spinach</h6>
+                <p class="card-text product-price">$1.99</p>
+              </div>
+            </div>
+          </li>
+          <!-- Add more vegetables here -->
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="subcategory-title">Canned Foods</h5>
+        <ul class="product-list">
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Canned Soup</h6>
+                <p class="card-text product-price">$2.99</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Canned Beans</h6>
+                <p class="card-text product-price">$1.49</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card product-card">
+              <div class="card-body">
+                <h6 class="card-title product-name">Canned Tuna</h6>
+                <p class="card-text product-price">$2.99</p>
+              </div>
+            </div>
+          </li>
+          <!-- Add more canned foods here -->
+        </ul>
+      </div>
+      <!-- Add more subcategories and their items here -->
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  -->
+</body>
+</html>
