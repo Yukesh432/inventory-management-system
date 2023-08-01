@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./dashboard.php" style="color: #fff;">Dashboard</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'dashboard-index' %}" style="color: #fff;">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./products.php" style="color: #fff;">Products</a>
+            <a class="nav-link" href="{% url 'allproduct' %}" style="color: #fff;">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./categories.php" style="color: #fff;">Categories</a>

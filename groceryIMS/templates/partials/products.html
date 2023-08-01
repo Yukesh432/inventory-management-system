@@ -78,6 +78,50 @@
       color: #666;
       font-size: 14px;
     }
+    .col-md-3 {
+      width: 25%;
+      padding: 10px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .category-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .subcategory-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .subcategory-list li {
+      margin-bottom: 5px;
+    }
+
+    .subcategory-list li a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+    }
+
+    .subcategory-list li a:hover {
+      color: #007bff;
+    }
+
+    .remaining-quantity {
+      font-size: 12px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
@@ -117,6 +161,21 @@
     <div class="col-md-3">
       <div class="card">
         <div class="card-body">
+          <h4 class="category-title">Rice and Lentils</h4>
+          <ul class="subcategory-list">
+            <li><a href="#">Long Grain Rice</a></li>
+            <li><a href="#">Jeera Masino Rice</a></li>
+            <li><a href="#">Red Lentils</a></li>
+            <li><a href="#">Horsegram</a></li>
+            <li><a href="#">Peas</a></li>
+            <!-- Add more bread subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
           <h4 class="category-title">Chocolate Items</h4>
           <ul class="subcategory-list">
             <li><a href="#">Dark Chocolate</a></li>
@@ -135,11 +194,35 @@
             <li><a href="#">Shampoo</a></li>
             <li><a href="#">Toothpaste</a></li>
             <li><a href="#">Body Lotion</a></li>
+            <li><a href="#">Hair Oil</a></li>
             <!-- Add more cosmetics subcategories here -->
           </ul>
         </div>
       </div>
     </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="category-title">Soaps and Detergents</h4>
+          <ul class="subcategory-list">
+            <li>
+              <a href="#">Patanjali Soap</a>
+              <span class="remaining-quantity">Remaining: 10</span>
+            </li>
+            <li>
+              <a href="#">Washing Powder</a>
+              <span class="remaining-quantity">Remaining: 5</span>
+            </li>
+            <li>
+              <a href="#">Bathing Soap</a>
+              <span class="remaining-quantity">Remaining: 15</span>
+            </li>
+            <!-- Add more cosmetics subcategories here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
     <!-- Add more categories here -->
   </div>
   
