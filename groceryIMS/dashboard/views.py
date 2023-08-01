@@ -14,3 +14,6 @@ def allproducts(request):
 
 def expiredproducts(request):
     return render(request, 'partials/expired.html')
+
+def soapNdetergent(request):
+    return render(request, 'partials/subproduct.html')
